@@ -1,4 +1,4 @@
-# 🧩 Sistema de Gestión de Inventario - Full Stack (.NET + Next.js)
+# 🧩 Sistema de Gestión de Inventario - Microservicios (.NET & REACT (Next JS))
 
 Este proyecto es una aplicación full stack de gestión de inventario que utiliza:
 
@@ -11,10 +11,10 @@ Este proyecto es una aplicación full stack de gestión de inventario que utiliz
 
 ### 🔧 Backend
 - Docker + Docker Compose
-- .NET 9 SDK (para ejecutar migraciones de base de datos)
+- .NET SDK (para ejecutar migraciones de base de datos)
 
 ### 🌐 Frontend
-- Node.js v18+
+- Node.js
 - npm o yarn
 
 ---
