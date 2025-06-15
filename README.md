@@ -51,8 +51,6 @@ dotnet ef database update
 
 ## 🧑‍💻 Frontend - Aplicación en React (Next.js)
 
-> Carpeta: `inventory-app`
-
 ### 📋 Requisitos
 
 - Backend corriendo en `http://localhost:7299`
@@ -60,8 +58,7 @@ dotnet ef database update
 ### 🚀 Instalación
 
 ```bash
-git clone <url-del-repositorio>
-cd inventory-app
+cd ../../frontend/inventory-app
 npm install   # o yarn install
 ```
 
@@ -72,15 +69,6 @@ npm run dev   # o yarn dev
 ```
 
 Accede a la app en: [http://localhost:3000](http://localhost:3000)
-
----
-
-## ⚙️ Configuración
-
-- Verifica que el backend esté en `http://localhost:7299`
-- Si necesitas apuntar a otra URL, actualiza:
-  - `src/features/products/services/ProductService.ts`
-  - `src/features/transactions/services/TransactionService.ts`
 
 ---
 
