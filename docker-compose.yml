@@ -1,0 +1,55 @@
+version: '3.9'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "PruebaTecSanti123!"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sql_data:/var/opt/mssql
+    networks:
+      - backend-net
+
+  apigateway:
+    build:
+      context: ./backend/ApiGateway
+    ports:
+      - "7299:80"
+    depends_on:
+      - productservice
+      - transactionservice
+    networks:
+      - backend-net
+  productservice:
+    build:
+      context: ./backend/ProductService
+    ports:
+      - "7146:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=InventoryDb;User Id=sa;Password=PruebaTecSanti123!;Encrypt=False;
+    depends_on:
+      - sqlserver
+    networks:
+      - backend-net
+
+  transactionservice:
+    build:
+      context: ./backend/TransactionService
+    ports:
+      - "7129:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=InventoryDb;User Id=sa;Password=PruebaTecSanti123!;Encrypt=False;
+    depends_on:
+      - sqlserver
+    networks:
+      - backend-net
+
+volumes:
+  sql_data:
+
+networks:
+  backend-net:
