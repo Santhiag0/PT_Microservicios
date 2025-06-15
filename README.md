@@ -7,6 +7,14 @@ Este proyecto es una aplicación full stack de gestión de inventario que utiliz
 
 ---
 
+## 📽️ Video Explicativo
+
+Puedes ver el video en el siguiente enlace:
+
+[Ver video explicativo](https://drive.google.com/file/d/140Ul-0srEKuSV_sP35hJb_-b03dk1Qey/view?usp=sharing)
+
+---
+
 ## ⚙️ Requisitos Previos
 
 ### 🔧 Backend
