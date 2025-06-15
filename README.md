@@ -118,16 +118,4 @@ src/
 
 ---
 
-## 🤝 Contribuciones
 
-1. Haz un fork del repositorio
-2. Crea una rama: `git checkout -b feature/NuevaFuncionalidad`
-3. Realiza commits: `git commit -m "Agrega X funcionalidad"`
-4. Push: `git push origin feature/NuevaFuncionalidad`
-5. Abre un Pull Request
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Revisa [LICENSE.md](LICENSE.md) para más detalles.
